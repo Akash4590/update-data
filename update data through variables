@@ -1,0 +1,27 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+function App() {
+ let data = "akash khan"
+ function apple(){
+ data = "khan";
+ alert(data);
+  
+ }
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <div>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      <h2>{data}</h2>
+      <button onClick={apple}>click me</button>
+      </div>
+       </>
+  )
+}
+
+export default App
